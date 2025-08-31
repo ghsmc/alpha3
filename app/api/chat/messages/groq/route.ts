@@ -4,7 +4,6 @@ import Groq from 'groq-sdk';
 import { ApiConfig } from '@/types/app';
 
 export const runtime = 'edge';
-
 export const dynamic = 'force-dynamic';
 
 export async function POST(req: Request) {
@@ -22,13 +21,22 @@ export async function POST(req: Request) {
         apiKey: config.provider?.apiKey ?? process.env.GROQ_API_KEY ?? '',
     });
 
-    const response = await groq.chat.completions.create({
-        model: config.model.model_id,
-        stream: true,
-        messages,
-    });
-
-    const output = OpenAIStream(response);
-
-    return new StreamingTextResponse(output);
+    if (config.stream) {
+        const response = await groq.chat.completions.create({
+            model: config.model.model_id,
+            stream: true,
+            messages,
+        });
+        const output = OpenAIStream(response);
+        return new StreamingTextResponse(output);
+    } else {
+        const response = await groq.chat.completions.create({
+            model: config.model.model_id,
+            stream: false,
+            messages,
+        });
+        return new Response(JSON.stringify({ content: response.choices[0].message.content }), {
+            headers: { 'Content-Type': 'application/json' },
+        });
+    }
 }

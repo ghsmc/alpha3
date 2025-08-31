@@ -1,11 +1,11 @@
-import { Message } from 'ai';
 import { CohereClient } from 'cohere-ai';
+import { Message } from 'ai';
 
 import { ApiConfig } from '@/types/app';
 import { toCohereRole } from '@/utils/provider/cohere';
+import { StreamingTextResponse } from 'ai';
 
 export const runtime = 'edge';
-
 export const dynamic = 'force-dynamic';
 
 export async function POST(req: Request) {
@@ -36,16 +36,27 @@ export async function POST(req: Request) {
         model: config.model.model_id,
     });
 
-    const output = new ReadableStream({
-        async start(controller) {
-            for await (const event of response) {
-                if (event.eventType === 'text-generation') {
-                    controller.enqueue(event.text);
+    if (config.stream) {
+        const output = new ReadableStream({
+            async start(controller) {
+                for await (const event of response) {
+                    if (event.eventType === 'text-generation') {
+                        controller.enqueue(event.text);
+                    }
                 }
+                controller.close();
+            },
+        });
+        return new StreamingTextResponse(output);
+    } else {
+        let fullResponse = '';
+        for await (const event of response) {
+            if (event.eventType === 'text-generation') {
+                fullResponse += event.text;
             }
-            controller.close();
-        },
-    });
-
-    return new Response(output);
+        }
+        return new Response(JSON.stringify({ content: fullResponse }), {
+            headers: { 'Content-Type': 'application/json' },
+        });
+    }
 }

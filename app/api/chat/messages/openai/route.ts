@@ -4,7 +4,6 @@ import OpenAI from 'openai';
 import { ApiConfig } from '@/types/app';
 
 export const runtime = 'edge';
-
 export const dynamic = 'force-dynamic';
 
 export async function POST(req: Request) {
@@ -23,13 +22,22 @@ export async function POST(req: Request) {
         baseURL: config.provider?.endpoint ?? process.env.OPENAI_API_ENDPOINT ?? 'https://api.openai.com/v1',
     });
 
-    const response = await openai.chat.completions.create({
-        model: config.model.model_id,
-        stream: true,
-        messages,
-    });
-
-    const output = OpenAIStream(response);
-
-    return new StreamingTextResponse(output);
+    if (config.stream) {
+        const response = await openai.chat.completions.create({
+            model: config.model.model_id,
+            stream: true,
+            messages,
+        });
+        const output = OpenAIStream(response);
+        return new StreamingTextResponse(output);
+    } else {
+        const response = await openai.chat.completions.create({
+            model: config.model.model_id,
+            stream: false,
+            messages,
+        });
+        return new Response(JSON.stringify({ content: response.choices[0].message.content }), {
+            headers: { 'Content-Type': 'application/json' },
+        });
+    }
 }
