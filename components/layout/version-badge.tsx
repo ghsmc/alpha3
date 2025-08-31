@@ -38,10 +38,11 @@ export const VersionBadge = () => {
                     <Avatar>
                         <AvatarImage src='/icon.svg' width={50} height={50} />
                     </Avatar>
-                    <p className='text-xl font-medium'>Chat Chat</p>
+                    <p className='text-xl font-medium text-blue-600 dark:text-blue-400'>Milo Wayfinder</p>
+                    <p className='text-sm text-gray-600 dark:text-gray-400'>The Dream Job Experience</p>
                     <VersionLabel />
                     {!isLatestVersion && (
-                        <Link href='https://github.com/okisdev/ChatChat/releases/latest' target='_blank'>
+                        <Link href='https://github.com/ghsmc/alpha3/releases/latest' target='_blank'>
                             <Badge variant='destructive'>{t('new_version_available')}</Badge>
                         </Link>
                     )}
@@ -49,43 +50,43 @@ export const VersionBadge = () => {
                 <div className='flex w-full flex-col space-y-1 text-xs'>
                     <div className='flex justify-between'>
                         <Link
-                            href='https://docs.okis.dev/docs/chat'
+                            href='#'
                             target='_blank'
                             className='inline-flex items-center space-x-1 rounded px-1 py-0.5 transition duration-200 ease-in-out hover:bg-gray-200 dark:hover:bg-neutral-600'
                         >
-                            <span>{t('docs')}</span>
+                            <span>Documentation</span>
                         </Link>
                         <Link
-                            href='https://github.com/okisdev/ChatChat'
+                            href='https://github.com/ghsmc/alpha3'
                             target='_blank'
                             className='inline-flex items-center space-x-1 self-end rounded px-1 py-0.5 underline transition duration-200 ease-in-out hover:bg-gray-200 dark:hover:bg-neutral-700'
                         >
-                            <p>{t('open_source_message', { license: 'AGPL-3.0' })}</p>
+                            <p>Open Source</p>
                         </Link>
                     </div>
                     <div className='flex justify-between'>
                         <div className='space-x-3 text-xs'>
                             <Link
-                                href='https://www.harrly.com/privacy-policy'
+                                href='#'
                                 target='_blank'
                                 className='inline-flex items-center space-x-1 rounded px-1 py-0.5 transition duration-200 ease-in-out hover:bg-gray-200 dark:hover:bg-neutral-600'
                             >
-                                <span>{t('privacy_policy')}</span>
+                                <span>Privacy Policy</span>
                             </Link>
                             <Link
-                                href='https://www.harrly.com/cookies'
+                                href='#'
                                 target='_blank'
                                 className='inline-flex items-center space-x-1 rounded px-1 py-0.5 transition duration-200 ease-in-out hover:bg-gray-200 dark:hover:bg-neutral-600'
                             >
-                                <span>{t('cookies')}</span>
+                                <span>Terms of Service</span>
                             </Link>
                         </div>
                         <Link
-                            href='https://www.harrly.com/'
+                            href='#'
                             target='_blank'
                             className='inline-flex items-center space-x-1 rounded px-1 py-0.5 transition duration-200 ease-in-out hover:bg-gray-200 dark:hover:bg-neutral-600'
                         >
-                            {t('made_by_author', { author: 'Harry Yep' })}
+                            Made with ❤️ by George McCain
                         </Link>
                     </div>
                 </div>

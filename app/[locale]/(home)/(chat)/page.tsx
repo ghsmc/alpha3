@@ -19,7 +19,7 @@ import { ProviderSetting, SpecifiedProviderSetting } from '@/types/settings';
 import { whatTimeOfDay } from '@/utils/app/time';
 import { generateUUID } from '@/utils/app/uuid';
 
-export default function Chat() {
+export default function MiloWayfinder() {
     const searchParams = useSearchParams();
 
     const router = useRouter();
@@ -49,7 +49,7 @@ export default function Chat() {
     const [currentProviderSettings] = useAtom<ProviderSetting | null>(store.currentProviderSettingsAtom);
 
     const { messages, setMessages, isLoading, input, handleInputChange, handleSubmit, stop } = useChat({
-        initialInput: conversationSettings.systemPrompt ?? undefined,
+        initialInput: `You are Milo Wayfinder, an AI career mentor who helps people find their dream jobs. You provide strategic guidance, company recommendations, and actionable steps. Always respond with empathy and practical advice.`,
         api: advancedSettings.unifiedEndpoint ? '/api/chat/messages' : `/api/chat/messages/${currentUseModel.provider.toString().toLowerCase()}`,
         body: {
             uuid: currentConversationUUID,
@@ -153,7 +153,14 @@ export default function Chat() {
                 </div>
             ) : (
                 <div className='flex size-full items-center justify-center'>
-                    <p className='text-xl'>{t(whatTimeOfDay())}</p>
+                    <div className='text-center'>
+                        <h2 className='text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-2'>
+                            What's your dream job?
+                        </h2>
+                        <p className='text-lg text-gray-600 dark:text-gray-400'>
+                            Tell me what makes you come alive. I'll help you find the path to get there.
+                        </p>
+                    </div>
                 </div>
             )}
             <InputBox inputRef={inputRef} loading={isLoading} input={input} handleInput={handleInputChange} handleSubmit={handleSubmitChat} handleStop={handleStop} />

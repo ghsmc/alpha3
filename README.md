@@ -1,52 +1,63 @@
-# Chat Chat
+# Milo Wayfinder
 
-> Your own unified chat and search to AI platform, with a simple and easy to use interface.
+> **The Dream Job Experience** - Find work that makes you come alive.
 
-<p align='center'>
-    <a >🇺🇸</a> | <a href='./README.zh_HK.md'>🇭🇰</a> | <a href='./README.zh_CN.md'>🇨🇳</a> | <a href='./README.ja.md'>🇯🇵</a>
-</p>
+*"The best way to predict the future is to invent it."* - George McCain, Founder & Visionary
 
-<p align='center'>
-    <a href='https://docs.okis.dev/docs/chat' target='_blank'>
-        Documentation
-    </a>
-</p>
+## 🎯 The Vision
 
-## Interface
+Milo Wayfinder is more than a job platform. It's **the bridge between dreams and reality**.
 
-![Search](https://cdn.harrly.com/project/GitHub/Chat-Chat/img/search.png)
+### The Experience
 
-![Chat](https://cdn.harrly.com/project/GitHub/Chat-Chat/img/chat.png)
+1. **One Question**: "What's your dream job?"
+2. **Three Columns**: Companies | Connections | Strategic Plan
+3. **Magic**: AI-powered personalization that feels like having a brilliant mentor
+4. **Clarity**: Instead of 100 tabs, you get 3 actionable steps
 
-https://github.com/okisdev/ChatChat/assets/66008528/388023d5-b21a-40ee-a856-aab31de3d580
+### The Philosophy
 
-https://github.com/okisdev/ChatChat/assets/66008528/f8d943d5-77c9-479b-9d5f-1e77eabd47b0
+We believe that everyone deserves to find work that makes them come alive.
+We believe that the path to your dream job should be clear, not confusing.
+We believe that technology should feel human, not mechanical.
 
-## Features
+## 🚀 Features
 
--   Support major AI Providers (Anthropic, OpenAI, Cohere, Google Gemini, etc.)
--   Ease self-hosted
+- **Dream Job Input**: Natural language, no forms
+- **Company Matching**: AI-powered relevance scoring
+- **Warm Intros**: Human connection mapping
+- **Strategic Planning**: Week-by-week action plans with EV scores
+- **Smart Drafts**: AI-generated emails in your voice
+- **Shareable Plans**: Clean URLs for collaboration
+- **Real-time Updates**: Live EV recalculation
 
-## Usage
+## 🎨 The Interface
 
-[docs](https://docs.okis.dev/docs/chat)
+- **Minimalist Design**: Clean, focused, distraction-free
+- **Three-Column Layout**: Companies | Connections | Plan
+- **Smooth Animations**: Breathing, blooming, flowing
+- **Responsive**: Works on any device, any screen
+- **Accessible**: Built for everyone
 
-## Deployment
+## 🏗️ Technical Stack
 
-[![Deployed in Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/okisdev/ChatChat)
+- **Framework**: Next.js 14 with TypeScript
+- **Styling**: Tailwind CSS with custom animations
+- **AI**: Multi-provider AI integration (OpenAI, Anthropic, Google, etc.)
+- **Deployment**: Vercel-ready with edge runtime
+- **Database**: Real-time company and role data
+- **Analytics**: Performance monitoring and insights
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/-WWW5r)
+## 🎯 The Mission
 
-more deployment methods in [docs](https://docs.okis.dev/docs/chat)
+To make finding your dream job feel like having a brilliant mentor who knows everyone and wants you to succeed.
 
-## LICENSE
+## 👨‍💼 About the Founder
 
-[AGPL-3.0](./LICENSE)
+**George McCain** - Visionary & Founder
 
-## Stack
+Building the future of work, one dream job at a time.
 
-nextjs / tailwindcss / shadcn UI
+---
 
-## Note
-
--   AI may generate inappropriate content, please use it with caution.
+*This is more than a platform. This is a revolution in how people think about their careers.*

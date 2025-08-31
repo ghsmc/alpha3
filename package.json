@@ -1,6 +1,7 @@
 {
-  "name": "chat-chat",
-  "version": "0.1.9",
+  "name": "milo-wayfinder",
+  "version": "1.0.0",
+  "description": "The Dream Job Experience - Find work that makes you come alive",
   "private": true,
   "scripts": {
     "dev": "next dev",

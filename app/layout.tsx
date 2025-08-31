@@ -9,15 +9,15 @@ import 'tippy.js/dist/tippy.css';
 const onest = Onest({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-    title: 'Chat Chat',
-    description: 'Chat Chat - Unlock next-level conversations with AI',
+    title: 'Milo Wayfinder - The Dream Job Experience',
+    description: 'Find work that makes you come alive. AI-powered career guidance that feels like having a brilliant mentor who knows everyone and wants you to succeed.',
 
     manifest: '/manifest.json',
 
     appleWebApp: {
         capable: true,
         statusBarStyle: 'default',
-        title: 'Chat Chat',
+        title: 'Milo Wayfinder',
     },
 };
 
