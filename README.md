@@ -1,63 +1,47 @@
-# Milo Wayfinder
+# Milo Wayfinder - The Dream Job Experience
 
-> **The Dream Job Experience** - Find work that makes you come alive.
+Find work that makes you come alive. AI-powered career guidance that feels like having a brilliant mentor who knows everyone and wants you to succeed.
 
-*"The best way to predict the future is to invent it."* - George McCain, Founder & Visionary
+## 🎯 Mission
 
-## 🎯 The Vision
+Milo Wayfinder transforms the overwhelming job search into a guided journey of self-discovery. We believe everyone deserves work that doesn't just pay the bills, but makes them come alive.
 
-Milo Wayfinder is more than a job platform. It's **the bridge between dreams and reality**.
+## ✨ Features
 
-### The Experience
+- **One Question Philosophy**: Start with "What's your dream job?" and let the conversation flow naturally
+- **AI Career Mentor**: Milo acts as your personal career advisor, strategist, and network connector
+- **Strategic Guidance**: Get actionable steps, company recommendations, and industry insights
+- **Human-Centered Design**: Clean, intuitive interface that puts the focus on your journey
 
-1. **One Question**: "What's your dream job?"
-2. **Three Columns**: Companies | Connections | Strategic Plan
-3. **Magic**: AI-powered personalization that feels like having a brilliant mentor
-4. **Clarity**: Instead of 100 tabs, you get 3 actionable steps
+## 🚀 Live Demo
 
-### The Philosophy
+Visit [Milo Wayfinder](https://alpha3-w8ei-theta.vercel.app) to experience the dream job finder in action.
 
-We believe that everyone deserves to find work that makes them come alive.
-We believe that the path to your dream job should be clear, not confusing.
-We believe that technology should feel human, not mechanical.
+## 🛠️ Tech Stack
 
-## 🚀 Features
+- **Framework**: Next.js 14 with App Router
+- **AI Integration**: Multiple providers (OpenAI, Anthropic, Google, Cohere, etc.)
+- **Styling**: Tailwind CSS
+- **Deployment**: Vercel
+- **PWA**: Progressive Web App support
 
-- **Dream Job Input**: Natural language, no forms
-- **Company Matching**: AI-powered relevance scoring
-- **Warm Intros**: Human connection mapping
-- **Strategic Planning**: Week-by-week action plans with EV scores
-- **Smart Drafts**: AI-generated emails in your voice
-- **Shareable Plans**: Clean URLs for collaboration
-- **Real-time Updates**: Live EV recalculation
+## 🎨 Philosophy
 
-## 🎨 The Interface
+We believe in the power of asking the right questions. Instead of overwhelming you with job boards and filters, Milo Wayfinder starts with one simple question: "What's your dream job?" From there, the conversation naturally evolves into actionable insights, strategic planning, and real opportunities.
 
-- **Minimalist Design**: Clean, focused, distraction-free
-- **Three-Column Layout**: Companies | Connections | Plan
-- **Smooth Animations**: Breathing, blooming, flowing
-- **Responsive**: Works on any device, any screen
-- **Accessible**: Built for everyone
+## 📱 Getting Started
 
-## 🏗️ Technical Stack
+1. Visit the live application
+2. Start with "What's your dream job?"
+3. Let Milo guide you through the discovery process
+4. Get personalized recommendations and next steps
 
-- **Framework**: Next.js 14 with TypeScript
-- **Styling**: Tailwind CSS with custom animations
-- **AI**: Multi-provider AI integration (OpenAI, Anthropic, Google, etc.)
-- **Deployment**: Vercel-ready with edge runtime
-- **Database**: Real-time company and role data
-- **Analytics**: Performance monitoring and insights
+## 🤝 Contributing
 
-## 🎯 The Mission
-
-To make finding your dream job feel like having a brilliant mentor who knows everyone and wants you to succeed.
-
-## 👨‍💼 About the Founder
-
-**George McCain** - Visionary & Founder
-
-Building the future of work, one dream job at a time.
+This project is open source and welcomes contributions. See our GitHub repository for more details.
 
 ---
 
-*This is more than a platform. This is a revolution in how people think about their careers.*
+**Made with ❤️ by George McCain**
+
+*Find work that makes you come alive.*
