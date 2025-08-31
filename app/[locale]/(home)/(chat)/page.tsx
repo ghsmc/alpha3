@@ -16,7 +16,6 @@ import store from '@/hooks/store';
 import { ApiConfig } from '@/types/app';
 import { Conversation } from '@/types/conversation';
 import { ProviderSetting, SpecifiedProviderSetting } from '@/types/settings';
-import { whatTimeOfDay } from '@/utils/app/time';
 import { generateUUID } from '@/utils/app/uuid';
 
 export default function MiloWayfinder() {
