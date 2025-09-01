@@ -153,6 +153,22 @@ export default function MiloWayfinder() {
             ) : (
                 <div className='flex size-full items-center justify-center'>
                     <div className='text-center'>
+                        <div className="mb-8">
+                            <h1 className="text-4xl font-bold text-black dark:text-white mb-2">
+                                Milo Wayfinder
+                            </h1>
+                            <p className="text-xl text-gray-600 dark:text-gray-300">
+                                The Dream Job Experience
+                            </p>
+                            <div className="mt-4">
+                                <a 
+                                    href="/opportunities" 
+                                    className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                                >
+                                    🎯 Browse Summer Opportunities
+                                </a>
+                            </div>
+                        </div>
                         <h2 className='text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-2'>
                             What's your dream job?
                         </h2>
